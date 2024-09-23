@@ -6,49 +6,56 @@ Os alunos se inscrevem para as disciplinas, que podem ter, no máximo, 15 alunos
 Cada aluno só pode estar matriculado em um único curso e estar inscrito simultaneamente em, no máximo 6 disciplinas.
 
 Utilize o diagrama de classes abaixo para implementar a solução:
-----------------------------------------
-Aluno
-----------------------------------------
-id: int
-nome: string
-----------------------------------------
-+ podeMatricular(Cursos cursos): bool
-----------------------------------------
+## Aluno
+| Campo               | Tipo   |
+|---------------------|--------|
+| id                  | int    |
+| nome                | string |
 
-----------------------------------------
-Disciplina
-----------------------------------------
-- id: int
-- descricao: string
-- alunos: Aluno[15]
-----------------------------------------
-+ matricularAluno(Aluno aluno): bool
-+ desmatricularAluno(Aluno aluno): bool
-----------------------------------------
+**Métodos:**
+- `podeMatricular(Cursos cursos): bool`
 
-----------------------------------------------------------
-Curso
-----------------------------------------------------------
-id: int
-descricao: string
-disciplinas: disciplina[12]
-----------------------------------------------------------
-+ adicionarDisciplina(Disciplina disciplina): bool
-+ pesquisarDisciplina(Disciplina disciplina): Disciplina
-+ removerDisciplina(Disciplina disciplina): bool
-----------------------------------------------------------
+---
 
-------------------------------------
-Escola
-------------------------------------
-cursos: Curso[5]
-------------------------------------
-+ adicionarCurso(Curso curso): bool
-+ pesquisarCurso(Curso curso): Curso
-+ removerCurso(Curso curso): bool
-------------------------------------
+## Disciplina
+| Campo               | Tipo       |
+|---------------------|------------|
+| id                  | int        |
+| descricao           | string     |
+| alunos              | Aluno[15]  |
 
-Opções no seletor:
+**Métodos:**
+- `matricularAluno(Aluno aluno): bool`
+- `desmatricularAluno(Aluno aluno): bool`
+
+---
+
+## Curso
+| Campo               | Tipo           |
+|---------------------|----------------|
+| id                  | int            |
+| descricao           | string         |
+| disciplinas         | Disciplina[12] |
+
+**Métodos:**
+- `adicionarDisciplina(Disciplina disciplina): bool`
+- `pesquisarDisciplina(Disciplina disciplina): Disciplina`
+- `removerDisciplina(Disciplina disciplina): bool`
+
+---
+
+## Escola
+| Campo               | Tipo     |
+|---------------------|----------|
+| cursos              | Curso[5] |
+
+**Métodos:**
+- `adicionarCurso(Curso curso): bool`
+- `pesquisarCurso(Curso curso): Curso`
+- `removerCurso(Curso curso): bool`
+
+
+### Opções no seletor:
 0. Sair
 1. Adicionar curso
 2. Pesquisar curso (mostrar inclusive as disciplinas associadas)
