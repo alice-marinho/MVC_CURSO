@@ -1,0 +1,7 @@
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\bin\Debug\MVC_Cursos.exe.config
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\bin\Debug\MVC_Cursos.exe
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\bin\Debug\MVC_Cursos.pdb
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\obj\Debug\MVC_Cursos.csproj.AssemblyReference.cache
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\obj\Debug\MVC_Cursos.csproj.CoreCompileInputs.cache
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\obj\Debug\MVC_Cursos.exe
+C:\Users\alice\source\repos\MVC_Cursos\MVC_Cursos\obj\Debug\MVC_Cursos.pdb
